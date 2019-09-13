@@ -2,12 +2,11 @@ require 'pry'
 
 def my_find(collection)
   i = 0 
-  x = []
   while i < collection.length
-    x << return collection[i] if yield(collection[i])
+    return collection[i] if yield(collection[i])
   i += 1 
   end 
-  x 
+  puts collection[i]
 end
 
 collection = (1..100).to_a 
